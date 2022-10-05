@@ -54,6 +54,8 @@ export const StyledNav = styled.header`
     }
 
     @media (max-width:610px) {
+        position: absolute;
+        
         nav {
             width: 30rem;
             height: 100%;
