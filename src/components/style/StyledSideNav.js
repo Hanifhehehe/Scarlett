@@ -5,6 +5,7 @@ export const StyledAside = styled.aside`
     top: 0;
     left: 0;
     height: 100vh;
+    width: calc(3vw + 3vh);
 
     div.side-wrapper {
         height: 100%;

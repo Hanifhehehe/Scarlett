@@ -2,7 +2,7 @@ import React from 'react'
 import {FaFacebook, FaTwitter, FaLinkedinIn, FaInstagram, FaDribbble, FaPinterestP} from 'react-icons/fa'
 import { StyledAside } from './style/StyledSideNav'
 
-export default function SideNav() {
+export default function NavSide() {
   return (
     <StyledAside>
         <div className="side-wrapper">

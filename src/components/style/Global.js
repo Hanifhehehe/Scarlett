@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Indie+Flower&display=swap');
     *,
     *::before,
     *::after {
@@ -19,8 +18,17 @@ export const GlobalStyles = createGlobalStyle`
         --tertiary-color-alt: #01727498;
     }
     body {
-        font-family: 'Baloo Tamma 2', cursive;
+        ${'' /* font-family: 'Poppins', sans-serif; */}
+        font-family: "Baloo Tamma 2", cursive;
         line-height: 1.8;
-        display: flex;
+    }
+    li {
+        list-style-type: none;
+    }
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
     }
 `

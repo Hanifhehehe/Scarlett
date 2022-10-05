@@ -6,5 +6,16 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+      {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Baloo Tamma 2\: 400,500,600,700,800`,
+          `Indie Flower`
+        ],
+        display: 'swap'
+      }
+    }
+  ],
 }
