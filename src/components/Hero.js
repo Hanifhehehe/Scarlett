@@ -6,7 +6,7 @@ export default function Hero() {
     <StyledHero>
         <div>
             <h1>Scarlett Tyler</h1>
-            <p>UX Designer /Frontend Developer</p>
+            <p>UX Designer / Frontend Developer</p>
             <a href='/'>My Work</a>
         </div>
     </StyledHero>
