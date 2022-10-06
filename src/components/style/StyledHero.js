@@ -29,6 +29,9 @@ export const StyledHero = styled.section `
     @media (max-width: 610px) {
         background-position: 80%;
     }
+    @media (min-width: 2300px) {
+        background-position: 150%;
+    }
     
     > div {
         background-color: var(--secondary-color-alt);
