@@ -20,42 +20,37 @@ export const StyledNav = styled.header`
     ul > li > a {
         position: relative;
         padding: 0.2rem 0.6rem;
-        font-size: calc(1rem + 0.6667vw)
-    }
-    ul > li > a:link::before,
-    ul > li > a:visited::before,
-    ul > li > a:link::after,
-    ul > li > a:visited::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 0.25rem;
-        background-color: #fff;
+        font-size: calc(1rem + 0.6667vw);
 
-        transform: scaleX(0);
-        transition: transform 0.6s cubic-bezier(1, 0, 0, 1);
-    }
-    ul > li > a:link::before,
-    ul > li > a:visited::before {
-        top: 0;
-        transform-origin: left;
-    }
-    ul > li > a:link::after,
-    ul > li > a:visited::after {
-        bottom: 0;
-        transform-origin: right;
-    }
-    ul > li > a:hover::before,
-    ul > li > a:active::before,
-    ul > li > a:hover::after,
-    ul > li > a:active::after {
-        transform: scaleX(1);
+        :link::before, :visited::before, :link::after, :visited::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 0.25rem;
+            background-color: #fff;
+
+            transform: scaleX(0);
+            transition: transform 0.6s cubic-bezier(1, 0, 0, 1);
+        }
+
+        :link::before, :visited::before {
+            top: 0;
+            transform-origin: left;
+        }
+        :link::after, :visited::after {
+            bottom: 0;
+            transform-origin: right;
+        }
+
+        :hover::before, :active::before, :hover::after, :active::after {
+            transform: scaleX(1);
+        }
     }
 
     @media (max-width:610px) {
         position: absolute;
-        
+
         nav {
             width: 30rem;
             height: 100%;

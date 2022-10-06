@@ -33,9 +33,8 @@ export const StyledAside = styled.aside`
         color: white;
         padding-bottom: calc(3rem+ 0.6667vw);
         transition: color 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-    ul.side-wrapper-social a:hover,
-    ul.side-wrapper-social a:active{ 
-        color:var(--secondary-color);
+        :hover, :active {
+            color:var(--secondary-color);
+        }
     }
 `

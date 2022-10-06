@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from './Nav'
 import NavSide from './NavSide'
+import Hero from './Hero'
 import { GlobalStyles } from './style/Global'
 
 export default function Layout() {
@@ -9,7 +10,8 @@ export default function Layout() {
         <GlobalStyles />
         <NavSide />
         <main style={{flex:1}}>
-            <Nav />
+          <Nav />
+          <Hero />
         </main>
     </div>
   )
