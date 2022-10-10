@@ -40,6 +40,13 @@ module.exports = {
         name: `services`,
         path: `${__dirname}/contents/services/`
       }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `skills`,
+        path: `${__dirname}/contents/skills`
+      }
     }
   ],
 }
