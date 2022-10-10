@@ -6,6 +6,7 @@ import { GlobalStyles } from './style/Global'
 import { graphql, useStaticQuery } from 'gatsby'
 import Work from './Work'
 import About from './About'
+import Services from './Services'
 
 export default function Layout() {
   const data = useStaticQuery(graphql`
@@ -17,9 +18,9 @@ export default function Layout() {
       }
     }
   `)
-  // const {title} = data.site.siteMetadata
+  const {title} = data.site.siteMetadata
 
-  // console.log(title)
+  console.log(title)
 
   return (
     <div style={{display:'flex'}}>
@@ -31,6 +32,7 @@ export default function Layout() {
           <Hero />
           <Work />
           <About />
+          <Services />
         </main>
     </div>
   )

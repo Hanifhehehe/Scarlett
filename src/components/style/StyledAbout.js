@@ -38,4 +38,36 @@ export const StyledAbout=styled.section`
     margin-bottom: 4rem;
     letter-spacing: 0.2rem;
   }
+  > div > a {
+    cursor: pointer;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+
+    position: relative;
+    z-index: 1;
+    :after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--primary-color);
+        transform: scaleY(0);
+        transform-origin: bottom;
+        transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+        z-index: -1;
+    }
+    :hover,
+    :active {
+        :after {
+            transform: scaleY(1);
+            transform-origin: top;
+        }
+    }
+  }
 `

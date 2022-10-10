@@ -18,13 +18,13 @@ export const GlobalStyles = createGlobalStyle`
         --tertiary-color-alt: #01727498;
     }
     body {
-        ${'' /* font-family: 'Poppins', sans-serif; */}
         font-family: "Baloo Tamma 2", cursive;
         line-height: 1.8;
     }
     li {
         list-style-type: none;
     }
+    a,
     a:link,
     a:visited {
         text-decoration: none;

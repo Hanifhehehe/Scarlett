@@ -7,7 +7,7 @@ import { StyledWork } from './style/StyledWork'
 export default function Work() {
     const data = useStaticQuery(graphql`
         query {
-          allMarkdownRemark {
+          allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/work/"}}) {
             edges {
               node {
                 fileAbsolutePath
@@ -25,7 +25,7 @@ export default function Work() {
         }
     `)
     const workImages = data.allMarkdownRemark.edges
-    console.log(workImages[0].node.frontmatter.title);
+    //console.log(workImages[0].node.frontmatter.title);
 
     return (
         <StyledWork>
