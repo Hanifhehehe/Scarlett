@@ -6,24 +6,34 @@ import { StyledWork } from './style/StyledWork'
 
 export default function Work() {
     const data = useStaticQuery(graphql`
-        query MyQuery {
-            allImageSharp {
-                edges {
-                    node {
-                        gatsbyImageData(placeholder: BLURRED, aspectRatio: 0.99, width: 1200)
+        query {
+          allMarkdownRemark {
+            edges {
+              node {
+                fileAbsolutePath
+                frontmatter {
+                  title
+                  image {
+                    childImageSharp {
+                      gatsbyImageData(placeholder: BLURRED, aspectRatio: 0.99, width: 1200)
                     }
+                  }
                 }
+              }
             }
+          }
         }
     `)
-    const workImages = data.allImageSharp.edges
-    // console.log(workImages);
+    const workImages = data.allMarkdownRemark.edges
+    console.log(workImages[0].node.frontmatter.title);
 
     return (
         <StyledWork>
             {
                 workImages.map(workImages =>
-                    <GatsbyImage image={getImage(workImages.node)} />
+                    <div key={workImages.node.frontmatter.title}>
+                        <GatsbyImage image={getImage(workImages.node.frontmatter.image)} alt={workImages.node.frontmatter.title} />
+                    </div>
                 )
             }
         </StyledWork>

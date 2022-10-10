@@ -5,6 +5,7 @@ import Hero from './Hero'
 import { GlobalStyles } from './style/Global'
 import { graphql, useStaticQuery } from 'gatsby'
 import Work from './Work'
+import About from './About'
 
 export default function Layout() {
   const data = useStaticQuery(graphql`
@@ -29,6 +30,7 @@ export default function Layout() {
           <Nav />
           <Hero />
           <Work />
+          <About />
         </main>
     </div>
   )
