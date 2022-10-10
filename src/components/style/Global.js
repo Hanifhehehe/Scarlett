@@ -31,4 +31,9 @@ export const GlobalStyles = createGlobalStyle`
         color: #fff;
         font-size: 1.5rem;
     }
+    section:not(:first-of-type) {
+        @media (min-width:1400px) {
+            padding: 5vh 20vw;
+        }
+    }
 `

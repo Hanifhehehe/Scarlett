@@ -3,7 +3,7 @@ import { StyledHero } from './style/StyledHero'
 
 export default function Hero() {
   return (
-    <StyledHero>
+    <StyledHero id="hero">
         <div>
             <h1>Scarlett Tyler</h1>
             <p>UX Designer / Frontend Developer</p>

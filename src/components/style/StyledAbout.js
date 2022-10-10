@@ -16,6 +16,8 @@ export const StyledAbout=styled.section`
   img {
     width: 100%;
     height: 100%;
+    max-height: 878px;
+    max-width: 703px;
     object-fit: cover;
   }
   > div > h2 {

@@ -3,7 +3,7 @@ import { StyledAbout } from './style/StyledAbout'
 
 export default function About() {
   return (
-    <StyledAbout>
+    <StyledAbout id="about" >
         <div className="about-image">
             <img src='img/content-img-02.jpg' />
         </div>

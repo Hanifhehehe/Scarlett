@@ -11,6 +11,8 @@ export const StyledWork = styled.section`
     padding: 2rem;
     flex-basis: 40rem;
     flex-grow: 1;
+    max-width: 450px;
+    max-height: 450px;
     
     clip-path: polygon(
         20% 0%,
@@ -27,11 +29,19 @@ export const StyledWork = styled.section`
     height: 100%;
     width: 100%;
     object-fit: cover;
+    filter: sepia(100%);
 
     transition: filter 0.45s ease;
     :hover, :active {
-        filter: sepia(80%);
+        filter: sepia(0);
     }
+  }
+  h1 {
+    font-size: calc(2rem + 3vw);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin: 2rem
   }
 
 `

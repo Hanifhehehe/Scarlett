@@ -28,7 +28,7 @@ export default function Services() {
 `)
 
   const services= data.allMarkdownRemark.edges
-  console.log(services)
+  // console.log(services)
   return (
     <StyledServices>
       {

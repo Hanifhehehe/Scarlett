@@ -29,6 +29,7 @@ export default function Work() {
 
     return (
         <StyledWork>
+            <h1>Here are the things I did!</h1>
             {
                 workImages.map(workImages =>
                     <div key={workImages.node.frontmatter.title}>

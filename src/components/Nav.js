@@ -14,8 +14,8 @@ export default function Nav() {
           <NavHamburger />
         </div>
           <ul>
-            <li className={isActive ? 'fade-in' : null} ><a href="/">Home</a></li>
-            <li className={isActive ? 'fade-in' : null} ><a href="/">About</a></li>
+            <li className={isActive ? 'fade-in' : null} ><a href="#hero">Home</a></li>
+            <li className={isActive ? 'fade-in' : null} ><a href="#about">About</a></li>
             <li className={isActive ? 'fade-in' : null} ><a href="/">Projects</a></li>
             <li className={isActive ? 'fade-in' : null} ><a href="/">Services</a></li>
             <li className={isActive ? 'fade-in' : null} ><a href="/">Hire Me</a></li>
